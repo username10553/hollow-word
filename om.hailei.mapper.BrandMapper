@@ -1,0 +1,7 @@
+    /**
+     * 查询所有
+     * @return
+     */
+    @Select("select * from tb_brand")
+    @ResultMap("brandResultMap")
+    List<Brand> selectAll();
