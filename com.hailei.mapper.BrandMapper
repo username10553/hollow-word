@@ -1,0 +1,6 @@
+    /**
+     * 添加数据
+     * @param brand
+     */
+    @Insert("insert into tb_brand values(null,#{brandName},#{companyName},#{ordered},#{description},#{status})")
+    void add(Brand brand);

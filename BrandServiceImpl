@@ -1,0 +1,19 @@
+@Override
+    public void add(Brand brand) {
+        //2. 获取SqlSession对象
+        SqlSession sqlSession = factory.openSession();
+        //3. 获取BrandMapper
+        BrandMapper mapper = sqlSession.getMapper(BrandMapper.class);
+
+        //4. 调用方法
+        mapper.add(brand);
+        sqlSession.commit();//提交事务
+
+        //5. 释放资源
+        sqlSession.close();
+    }
+————————————————
+
+                            版权声明：本文为博主原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。
+                        
+原文链接：https://blog.csdn.net/qq_42078934/article/details/125436314
