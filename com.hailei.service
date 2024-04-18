@@ -22,3 +22,10 @@
         return u == null;
 
     }
+    /**
+     * 注册方法
+     * @return
+     */
+
+    boolean register(User user);
+}
