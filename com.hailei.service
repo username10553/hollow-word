@@ -1,3 +1,9 @@
+/**
+     * 注册方法
+     * @return
+     */
+
+    boolean register(User user);
 public class BrandServiceImpl implements BrandService {
     //1. 创建SqlSessionFactory 工厂对象
     SqlSessionFactory factory = SqlSessionFactoryUtils.getSqlSessionFactory();
